@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.our-collection{
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid black;
+}
+
+.top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    opacity: 0; /*opacity-0 */
+    /* animation-delay: 0s; */
+    animation: fade-in-up 2s ease-out forwards; /*animate-fade-in-up */
+    /* shadow-sm + shadow-soft removed as per your request */
+
+}
+.top-banner > h1 {
+    font-size: 3.75rem;
+    color: #2c2421;
+    font-family: serif;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    text-align: center;
+    
+}
+
+.top-banner > p {
+    font-size: 1.14rem;
+    color: #7E6F67;
+    font-family: inter ,sans-serif;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.product-section{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 100%;
+    padding: 8rem 0rem;
+}
+
+.product-info{
+    width: 100%;
+    max-width: 100%;
+    padding: 0rem 2rem;
+}
+
+.product-head{
+    height: 22vh;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 4rem;
+}
+
+.product-head > h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #2c2421;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+
+.product-head > p {
+    font-size: 1.14rem;
+    color: #7E6F67;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    font-family: sans-serif;
+}
+
+.product-card{
+    height: 47vh;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 100%;
+}
+
+.column{
+    height: 47vh;
+    padding: 0px !important;
+    width: 27.2vw; 
+    max-width: 800px;
+    border-radius: 0.5rem; /* rounded-lg */
+    border: 1px solid #e6decf; /* border + border-beige (custom color) */
+    /* color: #1a1a1a; text-card-foreground (assumed charcoal-ish) */
+    background-color: #ffffff; /* bg-card (assuming white) */
+    opacity: 0; /*opacity-0 */
+    animation: fade-in-up 1.5s ease-out forwards; /*animate-fade-in-up */
+    /* shadow-sm + shadow-soft removed as per your request */
+
+}
+
+
+.column-contant{
+    height: 47vh;
+    padding: 2rem;
+}
+
+.column-contant > h3{
+    margin: 2.5rem 0rem 1rem 0rem;
+    font-size: 1.5rem;
+    font-family: serif;
+    color: #2c2421;
+    text-align: center;
+}
+
+.column-contant > p{
+    margin: auto;
+    color: #7e6f67;
+    font-size: 1rem;     
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.brand-section{
+    background-color:#f5f2ef;
+    width: 100%;
+    max-width: 100%;
+    padding: 8rem 0rem;
+}
+
+.brand-container{
+    width:100%;
+    max-width: 100%;
+    padding: 0rem 2rem;
+}
+
+.brand-head{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 4rem;
+}
+
+.brand-head > h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    margin-bottom: 1rem ;
+    color: #2c2421;
+}
+
+.brand-head > p {
+    text-align: center;
+    font-size: 1.14rem;
+    font-family: sans-serif;
+    margin: 0rem 11.46rem ;
+    color:#7E6F67 ;
+    line-height: 1.6;
+}
+
+
+
+ @keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translatey(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+@media (min-width: 320px ) and ( max-width: 480px) {
+    .top-banner > h1 {
+        font-size: 2rem;
+    }
+
+    .top-banner > p {
+        font-size: 0.9rem;
+    }
+
+    .product-head > h1 {
+        font-size: 2rem;
+    }
+
+    .product-head > p {
+        font-size: 0.9rem;
+    }
+
+    .brand-head > h1 {
+        font-size: 2rem;
+    }
+
+    .brand-head > p {
+        font-size: 0.9rem;
+    }
+}
