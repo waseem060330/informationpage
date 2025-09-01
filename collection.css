@@ -178,7 +178,6 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem;
     max-width: 1200px;
     margin: auto;
 }
@@ -218,6 +217,8 @@ main{
     height: 100%;
     object-fit: cover;
     transition: transform 0.7s ease;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .cards:hover .card-img img{
@@ -234,6 +235,61 @@ main{
     justify-content: space-between;
     margin-bottom: 1rem;
 }
+
+.brand-content > h3{
+    color: #2c2421;
+    font-size: 1.7rem;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+
+.brand-content > p{
+    color: #7e6f67;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+}
+
+.card-bottom > h4{
+    color: #212529;
+    font-size: 1.5rem;
+    font-family: serif;
+    margin-bottom: 0.75rem;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.card-btn:hover {
+    background-color: #555; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
 
  @keyframes fade-in-up {
   from {
