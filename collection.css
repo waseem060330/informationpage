@@ -26,6 +26,10 @@ main{
     display: flex;
     align-items: center;
     border: 0.5px solid black;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
 }
 
 .top-banner{
@@ -44,7 +48,7 @@ main{
 }
 .top-banner > h1 {
     font-size: 3.75rem;
-    color: var(--headingcolor,#2c2421);
+    color: var(--bgcolor, #fff);
     font-family: serif;
     width: 100%;
     max-width: 100%;
@@ -56,7 +60,7 @@ main{
 
 .top-banner > p {
     font-size: 1.14rem;
-    color: var(--textcolor ,#7E6F67);
+    color: var(--bgcolor ,#fff);
     font-family: inter ,sans-serif;
     width: 100%;
     max-width: 100%;
