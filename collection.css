@@ -182,9 +182,10 @@ main{
     text-align: center;
     font-size: 1.14rem;
     font-family: sans-serif;
-    margin: 0rem 11.46rem ;
+    margin: 0rem auto;
     color:var(--textcolor ,#7E6F67) ;
     line-height: 1.6;
+    max-width: 800px;
 }
 
 .brand-card{
